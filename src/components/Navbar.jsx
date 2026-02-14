@@ -13,11 +13,9 @@ export default function Navbar() {
   }, [])
 
   const links = [
-    { label: 'Why Us', href: '#benefits' },
-    { label: 'How It Works', href: '#process' },
-    { label: 'Reviews', href: '#testimonials' },
-    { label: 'About', href: '#about' },
-    { label: 'Water Removal', href: '#water-removal' },
+    { label: 'Why Us', href: '#why-us' },
+    { label: 'Reviews', href: '#reviews' },
+    { label: 'Get a Quote', href: '#quote' },
   ]
 
   return (

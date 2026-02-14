@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fafbfc"/>
+      <stop offset="100%" stop-color="#f0f2f5"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4c4a8"/>
+      <stop offset="100%" stop-color="#c2b090"/>
+    </linearGradient>
+    <linearGradient id="unit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f4f8"/>
+      <stop offset="100%" stop-color="#dce3ec"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#66b7e7"/>
+      <stop offset="100%" stop-color="#0170B9"/>
+    </linearGradient>
+    <linearGradient id="dampWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8eaed"/>
+      <stop offset="60%" stop-color="#d5d8dd"/>
+      <stop offset="100%" stop-color="#b8bfc8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Room -->
+  <!-- Wall -->
+  <rect x="0" y="0" width="600" height="300" fill="url(#wall)"/>
+  <!-- Floor -->
+  <rect x="0" y="300" width="600" height="100" fill="url(#floor)"/>
+  <!-- Baseboard -->
+  <rect x="0" y="292" width="600" height="12" fill="#e5ddd0" rx="1"/>
+
+  <!-- Damp patch on wall -->
+  <ellipse cx="120" cy="240" rx="70" ry="60" fill="url(#dampWall)" opacity="0.6"/>
+  <ellipse cx="100" cy="260" rx="40" ry="35" fill="#c5cad2" opacity="0.4"/>
+
+  <!-- Window -->
+  <rect x="400" y="50" width="120" height="160" rx="4" fill="#d6eaf8" stroke="#aaa" stroke-width="2"/>
+  <line x1="460" y1="50" x2="460" y2="210" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="400" y1="130" x2="520" y2="130" stroke="#bbb" stroke-width="1.5"/>
+  <rect x="400" y="50" width="120" height="160" rx="4" fill="none" stroke="#999" stroke-width="2"/>
+  <!-- Sky through window -->
+  <rect x="402" y="52" width="56" height="76" fill="#87ceeb" opacity="0.4" rx="2"/>
+  <rect x="462" y="52" width="56" height="76" fill="#87ceeb" opacity="0.4" rx="2"/>
+
+  <!-- Dehumidifier unit -->
+  <g transform="translate(230, 160)">
+    <rect x="0" y="0" width="140" height="145" rx="12" fill="url(#unit)" stroke="#b8c0cc" stroke-width="1.2"/>
+    <!-- Top vent -->
+    <rect x="15" y="12" width="110" height="40" rx="5" fill="#f5f5f5" stroke="#ddd" stroke-width="0.8"/>
+    <line x1="25" y1="22" x2="115" y2="22" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="25" y1="30" x2="115" y2="30" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="25" y1="38" x2="115" y2="38" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="25" y1="46" x2="115" y2="46" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Blue strip -->
+    <rect x="15" y="58" width="110" height="5" rx="2.5" fill="#0170B9"/>
+    <!-- Display -->
+    <rect x="30" y="72" width="80" height="30" rx="5" fill="#1a2332"/>
+    <text x="48" y="90" font-family="monospace" font-weight="700" font-size="11" fill="#60e6a8">65%</text>
+    <text x="85" y="90" font-family="monospace" font-weight="700" font-size="11" fill="#66b7e7">50L</text>
+    <!-- Power button -->
+    <circle cx="70" cy="120" r="8" fill="#0170B9"/>
+    <text x="70" y="123" text-anchor="middle" font-family="sans-serif" font-size="6" fill="white" font-weight="700">ON</text>
+    <!-- Handle -->
+    <rect x="50" y="-8" width="40" height="8" rx="4" fill="#9ca3af"/>
+    <!-- Wheels -->
+    <ellipse cx="30" cy="150" rx="10" ry="5" fill="#666"/>
+    <ellipse cx="110" cy="150" rx="10" ry="5" fill="#666"/>
+  </g>
+
+  <!-- Air flow from dehumidifier -->
+  <g opacity="0.25">
+    <path d="M380 200 Q400 190 395 175" stroke="#0170B9" stroke-width="2" fill="none" stroke-dasharray="4 3"/>
+    <path d="M385 220 Q410 210 405 190" stroke="#0170B9" stroke-width="2" fill="none" stroke-dasharray="4 3"/>
+    <path d="M380 240 Q405 235 400 215" stroke="#0170B9" stroke-width="2" fill="none" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- Water droplets being extracted (animated feel) -->
+  <path d="M180 200 C180 200 175 210 175 215 C175 217.8 177.2 220 180 220 C182.8 220 185 217.8 185 215 C185 210 180 200 180 200Z" fill="url(#drop)" opacity="0.7"/>
+  <path d="M195 230 C195 230 191 238 191 242 C191 244.2 192.8 246 195 246 C197.2 246 199 244.2 199 242 C199 238 195 230 195 230Z" fill="url(#drop)" opacity="0.5"/>
+  <path d="M160 250 C160 250 157 256 157 259 C157 260.7 158.3 262 160 262 C161.7 262 163 260.7 163 259 C163 256 160 250 160 250Z" fill="url(#drop)" opacity="0.4"/>
+
+  <!-- Dry air arrows going outward -->
+  <g opacity="0.15">
+    <circle cx="300" cy="180" r="40" stroke="#0170B9" stroke-width="1" fill="none" stroke-dasharray="6 4"/>
+    <circle cx="300" cy="180" r="60" stroke="#0170B9" stroke-width="0.8" fill="none" stroke-dasharray="6 4"/>
+  </g>
+</svg>

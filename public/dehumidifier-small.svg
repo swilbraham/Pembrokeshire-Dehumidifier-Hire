@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" fill="none">
+  <defs>
+    <linearGradient id="bodyS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f4f8"/>
+      <stop offset="100%" stop-color="#dce3ec"/>
+    </linearGradient>
+    <linearGradient id="dropS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#66b7e7"/>
+      <stop offset="100%" stop-color="#0170B9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Unit body -->
+  <rect x="50" y="40" width="140" height="200" rx="14" fill="url(#bodyS)" stroke="#b8c0cc" stroke-width="1.2"/>
+
+  <!-- Handle -->
+  <rect x="90" y="28" width="60" height="10" rx="5" fill="#9ca3af"/>
+
+  <!-- Top vent -->
+  <rect x="65" y="56" width="110" height="50" rx="6" fill="#f5f5f5" stroke="#ddd" stroke-width="0.8"/>
+  <line x1="75" y1="68" x2="165" y2="68" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="75" y1="78" x2="165" y2="78" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="75" y1="88" x2="165" y2="88" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="75" y1="98" x2="165" y2="98" stroke="#e0e0e0" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Blue accent -->
+  <rect x="65" y="115" width="110" height="5" rx="2.5" fill="#0170B9"/>
+
+  <!-- Display -->
+  <rect x="75" y="130" width="90" height="35" rx="6" fill="#1a2332"/>
+  <text x="96" y="152" font-family="monospace" font-weight="700" font-size="13" fill="#60e6a8">65%</text>
+  <text x="140" y="152" font-family="monospace" font-weight="700" font-size="10" fill="#66b7e7">50L</text>
+
+  <!-- Buttons -->
+  <circle cx="100" cy="190" r="8" fill="#0170B9"/>
+  <circle cx="100" cy="190" r="3" fill="none" stroke="white" stroke-width="1.5"/>
+  <line x1="100" y1="186" x2="100" y2="188" stroke="white" stroke-width="1.5"/>
+  <circle cx="140" cy="190" r="8" fill="#e5e7eb" stroke="#d1d5db"/>
+
+  <!-- Bottom vent -->
+  <rect x="65" y="205" width="110" height="22" rx="4" fill="#eee" stroke="#ddd" stroke-width="0.6"/>
+  <line x1="75" y1="212" x2="165" y2="212" stroke="#ddd" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="75" y1="220" x2="165" y2="220" stroke="#ddd" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Wheels -->
+  <ellipse cx="85" cy="245" rx="12" ry="6" fill="#666"/>
+  <ellipse cx="155" cy="245" rx="12" ry="6" fill="#666"/>
+
+  <!-- Water droplets -->
+  <path d="M25 90 C25 90 18 105 18 112 C18 115.9 21.1 119 25 119 C28.9 119 32 115.9 32 112 C32 105 25 90 25 90Z" fill="url(#dropS)" opacity="0.6"/>
+  <path d="M215 130 C215 130 209 143 209 149 C209 152.3 211.7 155 215 155 C218.3 155 221 152.3 221 149 C221 143 215 130 215 130Z" fill="url(#dropS)" opacity="0.5"/>
+  <path d="M30 180 C30 180 26 189 26 193 C26 195.2 27.8 197 30 197 C32.2 197 34 195.2 34 193 C34 189 30 180 30 180Z" fill="url(#dropS)" opacity="0.4"/>
+</svg>

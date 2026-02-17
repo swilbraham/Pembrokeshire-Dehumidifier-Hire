@@ -266,9 +266,9 @@ export default function LandingPage() {
               className="relative hidden lg:flex lg:items-center lg:justify-center"
             >
               <img
-                src="/dehumidifier-hero.svg"
+                src="/dehumidifier1.png"
                 alt="Commercial dehumidifier unit"
-                className="h-auto w-full max-w-md drop-shadow-2xl"
+                className="h-auto w-full max-w-sm rounded-2xl drop-shadow-2xl"
               />
             </motion.div>
           </div>
@@ -356,6 +356,21 @@ export default function LandingPage() {
                 </div>
               ))}
             </div>
+          </motion.div>
+
+          {/* Equipment showcase */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mt-12 flex justify-center"
+          >
+            <img
+              src="/dehumidifier2.png"
+              alt="Commercial dehumidifier in warehouse setting"
+              className="h-auto w-full max-w-2xl rounded-2xl shadow-lg"
+            />
           </motion.div>
         </div>
       </section>
